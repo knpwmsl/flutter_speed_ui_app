@@ -1,0 +1,39 @@
+name: flutter_speed_ui_app
+description: "A new Flutter project."
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.2.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  google_fonts: ^8.0.0
+  font_awesome_flutter: ^10.12.0
+
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/logo_hm.png
+    - assets/images/logo_a01.png
+    - assets/images/logo_b01.png
+    
+    - assets/icon/Facebook_logo.png
+    - assets/icon/Facebook_b_logo.png
+    - assets/icon/Google_b_logo.png
+    - assets/icon/Google_logo.png
+    - assets/icon/Apple_logo.png
+    - assets/icon/Apple_b_logo.png
