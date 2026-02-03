@@ -13,6 +13,7 @@ class _A01PageUiState extends State<A01PageUi> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: Color(0xffF89AEE), // สีต้องตรงกับ Container ด้านล่าง

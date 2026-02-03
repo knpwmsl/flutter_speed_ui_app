@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_unnecessary_containers
+
 import 'package:flutter/material.dart';
 import 'package:flutter_speed_ui_app/views/b03_page_ui.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -17,9 +19,13 @@ class _B02PageUiState extends State<B02PageUi> {
       home: Scaffold(
         backgroundColor: Color(0xFFF8F9FF),
         appBar: AppBar(
-          leading: Icon(
-            Icons.arrow_back_ios,
-            color: Colors.black54,
+          leading: IconButton(
+            icon: const Icon(
+              Icons.arrow_back_ios,
+              size: 29,
+              color: Colors.black54,
+            ),
+            onPressed: () => Navigator.of(context).pop(),
           ),
           backgroundColor: Color(0xFFF8F9FF),
           elevation: 0,
@@ -71,8 +77,8 @@ class _B02PageUiState extends State<B02PageUi> {
                         width: double.infinity,
                         height: 65,
                         decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
-                        color: Color(0xFFF1F4FF),
+                          borderRadius: BorderRadius.circular(10),
+                          color: Color(0xFFF1F4FF),
                         ),
                         child: Padding(
                           padding: const EdgeInsets.all(10.0),
@@ -99,8 +105,8 @@ class _B02PageUiState extends State<B02PageUi> {
                         width: double.infinity,
                         height: 65,
                         decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
-                        color: Color(0xFFF1F4FF),
+                          borderRadius: BorderRadius.circular(10),
+                          color: Color(0xFFF1F4FF),
                         ),
                         child: Padding(
                           padding: const EdgeInsets.all(10.0),
@@ -119,18 +125,14 @@ class _B02PageUiState extends State<B02PageUi> {
                       ),
                     ),
                     SizedBox(
-                      height: 35,
-                    ),
-                    
-                    SizedBox(
-                      height: 5,
+                      height: 40,
                     ),
                     Align(
                       alignment: Alignment.centerRight,
                       child: Padding(
                         padding: const EdgeInsets.only(right: 24.0),
                         child: TextButton(
-                          onPressed: (){},
+                          onPressed: () {},
                           child: Text(
                             'Forgot your password?',
                             style: GoogleFonts.poppins(
@@ -157,19 +159,19 @@ class _B02PageUiState extends State<B02PageUi> {
                           minimumSize: Size(360, 70),
                           foregroundColor: Colors.white,
                           textStyle: GoogleFonts.inter(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 23, 
-                            color: Colors.white),
+                              fontWeight: FontWeight.bold,
+                              fontSize: 23,
+                              color: Colors.white),
                         ),
                         child: Text('Sign in'),
-                        ),
+                      ),
                     ),
                     SizedBox(
                       height: 40,
                     ),
                     TextButton(
-                      onPressed: ()=>Navigator.push(context, MaterialPageRoute
-                      (builder: (context) => B03PageUi())),
+                      onPressed: () => Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => B03PageUi())),
                       child: Text(
                         'Create new account',
                         style: GoogleFonts.poppins(
@@ -246,7 +248,7 @@ class _B02PageUiState extends State<B02PageUi> {
             ],
           ),
         ),
-      ),  
+      ),
     );
   }
 }

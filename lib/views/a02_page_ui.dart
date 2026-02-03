@@ -13,6 +13,7 @@ class _A02PageUiState extends State<A02PageUi> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Color(0xffFFFFFF),
         appBar: AppBar(
@@ -157,7 +158,7 @@ class _A02PageUiState extends State<A02PageUi> {
                         gradient: LinearGradient(
                           colors: [
                             Colors.pink
-                                .withOpacity(0.0), // เริ่มจากใส (ซ้ายสุด)
+                                .withValues(alpha: 0.0), // เริ่มจากใส (ซ้ายสุด)
                             Colors.pink, // ไปหาเข้ม (ติดตัวหนังสือ)
                           ],
                           begin: Alignment.centerLeft,
@@ -184,7 +185,7 @@ class _A02PageUiState extends State<A02PageUi> {
                         gradient: LinearGradient(
                           colors: [
                             Colors.pink, // เริ่มจากเข้ม (ติดตัวหนังสือ)
-                            Colors.pink.withOpacity(0.0), // ไปหาใส (ขวาสุด)
+                            Colors.pink.withValues(alpha: 0.0), // ไปหาใส (ขวาสุด)
                           ],
                           begin: Alignment.centerLeft,
                           end: Alignment.centerRight,
@@ -220,7 +221,7 @@ class _A02PageUiState extends State<A02PageUi> {
                         ),
                       ),
                       child: Image.asset(
-                        'assets/icon/google_logo.png',
+                        'assets/icon/Google_a_logo.png',
                         width: 50, // กำหนดขนาดรูปภาพ
                         height: 50, // กำหนดขนาดรูปภาพ
                       ),
@@ -246,7 +247,7 @@ class _A02PageUiState extends State<A02PageUi> {
                         ),
                       ),
                       child: Image.asset(
-                        'assets/icon/Facebook_logo.png',
+                        'assets/icon/Facebook_a_logo.png',
                         width: 50, // กำหนดขนาดรูปภาพ
                         height: 50, // กำหนดขนาดรูปภาพ
                       ),
@@ -272,7 +273,7 @@ class _A02PageUiState extends State<A02PageUi> {
                         ),
                       ),
                       child: Image.asset(
-                        'assets/icon/Apple_logo.png',
+                        'assets/icon/Apple_a_logo.png',
                       ),
                     ),
                   ),

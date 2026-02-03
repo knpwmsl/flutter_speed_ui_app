@@ -30,10 +30,15 @@ flutter:
     - assets/images/logo_hm.png
     - assets/images/logo_a01.png
     - assets/images/logo_b01.png
+    - assets/images/logo_c01.png
     
-    - assets/icon/Facebook_logo.png
+    - assets/icon/App_c_logo.png
+    - assets/icon/Facebook_a_logo.png
     - assets/icon/Facebook_b_logo.png
+    - assets/icon/Facebook_c_logo.png
+    - assets/icon/Google_a_logo.png
     - assets/icon/Google_b_logo.png
-    - assets/icon/Google_logo.png
-    - assets/icon/Apple_logo.png
+    - assets/icon/Google_c_logo.png
+    - assets/icon/Apple_a_logo.png
     - assets/icon/Apple_b_logo.png
+    - assets/icon/Twitter_c_logo.png

@@ -14,6 +14,7 @@ class _B01PageUiState extends State<B01PageUi> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Color(0xFFFFFFFF),
         appBar: AppBar(
