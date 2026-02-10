@@ -30,14 +30,7 @@ class _C01PageUiState extends State<C01PageUi> {
         appBar: AppBar(
           backgroundColor: Colors.transparent,
           elevation: 0,
-          leading: IconButton(
-            icon: const Icon(
-              Icons.arrow_back_ios,
-              size: 29,
-              color: Colors.black54,
-            ),
-            onPressed: () => Navigator.of(context).pop(),
-          ),
+          
         ),
         body: Stack(children: [
           Container(

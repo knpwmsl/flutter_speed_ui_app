@@ -24,7 +24,7 @@ class _A01PageUiState extends State<A01PageUi> {
             size: 29,
             color: Colors.black54,
             ),
-          onPressed: () => Navigator.of(context).pop(),
+          onPressed: () => Navigator.popUntil(context, (route) => route.isFirst),
           ),
         ),
         body: Center(

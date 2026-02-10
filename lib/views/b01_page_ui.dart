@@ -24,7 +24,8 @@ class _B01PageUiState extends State<B01PageUi> {
               size: 29,
               color: Colors.black54,
             ),
-            onPressed: () => Navigator.of(context).pop(),
+            onPressed: () =>
+                Navigator.popUntil(context, (route) => route.isFirst),
           ),
           backgroundColor: Color(0xFFFFFFFF),
           elevation: 0,
