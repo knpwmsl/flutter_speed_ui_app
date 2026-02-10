@@ -3,6 +3,7 @@ import 'package:flutter_speed_ui_app/views/a01_page_ui.dart';
 import 'package:flutter_speed_ui_app/views/b01_page_ui.dart';
 import 'package:flutter_speed_ui_app/views/c01_page_ui.dart';
 import 'package:flutter_speed_ui_app/views/d01_page_ui.dart';
+import 'package:flutter_speed_ui_app/views/e01_page_ui.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class HomeUi extends StatefulWidget {
@@ -144,7 +145,7 @@ class _HomeUiState extends State<HomeUi> {
                 onPressed: () => Navigator.push(
                   context, 
                   MaterialPageRoute(
-                    builder: (context) => const D01PageUi()
+                    builder: (context) => const E01PageUi()
                   ),
                 ),
               ),

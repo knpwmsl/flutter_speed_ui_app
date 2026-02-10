@@ -32,6 +32,9 @@ flutter:
     - assets/images/logo_b01.png
     - assets/images/logo_c01.png
     - assets/images/logo_d01.png
+    - assets/images/logo_e00.png
+    - assets/images/logo_e01.png
+    - assets/images/logo_e05.png
     
     - assets/icon/App_c_logo.png
     - assets/icon/App_d_logo.png
