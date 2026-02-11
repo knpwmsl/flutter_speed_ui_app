@@ -29,7 +29,8 @@ class _D02PageUiState extends State<D02PageUi> {
               borderRadius: BorderRadius.circular(12),
             ),
             child: IconButton(
-              icon: const Icon(Icons.arrow_back_ios_new, size: 18, color: Colors.black),
+              icon: const Icon(Icons.arrow_back_ios_new,
+                  size: 18, color: Colors.black),
               // ✅ แก้จุดที่ 1: ใช้ pop แทน push เพื่อย้อนกลับไปหน้าก่อนหน้า (D01)
               onPressed: () => Navigator.push(
                 context,
@@ -59,7 +60,8 @@ class _D02PageUiState extends State<D02PageUi> {
             TextField(
               // ✅ แก้จุดที่ 2: ลบ obscureText ออก (Email ไม่ควรเป็นรหัสลับ)
               decoration: InputDecoration(
-                contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 25),
+                contentPadding:
+                    const EdgeInsets.symmetric(horizontal: 16, vertical: 25),
                 hintText: 'Enter your Email',
                 hintStyle: GoogleFonts.urbanist(
                   fontSize: 16,
@@ -84,7 +86,8 @@ class _D02PageUiState extends State<D02PageUi> {
             TextField(
               obscureText: _obscureText,
               decoration: InputDecoration(
-                contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 25),
+                contentPadding:
+                    const EdgeInsets.symmetric(horizontal: 16, vertical: 25),
                 hintText: 'Enter your password',
                 hintStyle: GoogleFonts.urbanist(
                   fontSize: 16,
@@ -94,7 +97,8 @@ class _D02PageUiState extends State<D02PageUi> {
                 filled: true,
                 fillColor: const Color(0xFFF7F8F9),
                 suffixIcon: IconButton(
-                  icon: Icon(_obscureText ? Icons.visibility_off : Icons.visibility),
+                  icon: Icon(
+                      _obscureText ? Icons.visibility_off : Icons.visibility),
                   onPressed: () => setState(() => _obscureText = !_obscureText),
                   color: Colors.grey,
                 ),
@@ -108,7 +112,7 @@ class _D02PageUiState extends State<D02PageUi> {
                 ),
               ),
             ),
-            
+
             Align(
               alignment: Alignment.centerRight,
               child: TextButton(
@@ -178,39 +182,37 @@ class _D02PageUiState extends State<D02PageUi> {
                 _buildSocialButton('assets/icon/Apple_b_logo.png'),
               ],
             ),
-
-            // ✅ แก้จุดที่ 3: เปลี่ยนจาก SizedBox(height: 200) เป็นระยะห่างที่น้อยลง
-            // เพื่อไม่ให้ดันเนื้อหาล้นจอจนขึ้นแถบเหลือง
-            const SizedBox(height: 50), 
-
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(
-                  "Don’t have an account? ",
-                  style: GoogleFonts.urbanist(
-                    color: const Color(0xFF6A707C),
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-                GestureDetector(
-                  onTap: () => Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => const D03PageUi())),
-                  child: Text(
-                    "Register Now",
+            const SizedBox(height: 200),
+            Align(
+              alignment: Alignment.bottomCenter,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    "Don’t have an account? ",
                     style: GoogleFonts.urbanist(
-                      color: const Color(0xFF35C2C1),
-                      fontWeight: FontWeight.bold,
+                      color: const Color(0xFF6A707C),
                       fontSize: 16,
+                      fontWeight: FontWeight.bold,
                     ),
                   ),
-                ),
-              ],
+                  GestureDetector(
+                    onTap: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const D03PageUi())),
+                    child: Text(
+                      "Register Now",
+                      style: GoogleFonts.urbanist(
+                        color: const Color(0xFF35C2C1),
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ),
-            const SizedBox(height: 20), // เผื่อระยะขอบล่าง
           ],
         ),
       ),

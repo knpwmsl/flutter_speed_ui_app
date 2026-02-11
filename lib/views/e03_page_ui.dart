@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_speed_ui_app/views/e02_page_ui.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class E03PageUi extends StatelessWidget {
@@ -190,7 +191,7 @@ class E03PageUi extends StatelessWidget {
                         _socialIcon('assets/icon/Apple_a_logo.png'),
                       ],
                     ),
-                    const SizedBox(height: 80),
+                    const SizedBox(height: 70),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -198,13 +199,23 @@ class E03PageUi extends StatelessWidget {
                           "Already have an Account? ",
                           style: GoogleFonts.poppins(color: Colors.black, fontSize: 16),
                         ),
-                        Text(
-                          'Log In',
-                          style: GoogleFonts.poppins(
-                              color: Color(0xFFFB9F1C),
-                              fontWeight: FontWeight.bold,
-                              fontSize: 16),
+                        TextButton(
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => const E02PageUi()),
+                            );
+                          },
+                          child: Text(
+                            'Log In',
+                            style: GoogleFonts.poppins(
+                                color: Color(0xFFFB9F1C),
+                                fontWeight: FontWeight.bold,
+                                fontSize: 16),
+                          ),
                         ),
+                        
+
                       ],
                     ),
                   ],

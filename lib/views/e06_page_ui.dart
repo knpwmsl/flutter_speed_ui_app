@@ -144,7 +144,7 @@ class _E06PageUiState extends State<E06PageUi> {
       obscureText: true,
       decoration: InputDecoration(
         hintText: hint,
-        hintStyle: TextStyle(color: Colors.grey[400], fontSize: 18),
+        hintStyle: TextStyle(color: Colors.black, fontSize: 18),
         filled: true,
         fillColor: Colors.white,
         enabledBorder: OutlineInputBorder(
