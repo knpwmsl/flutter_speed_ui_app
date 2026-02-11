@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_speed_ui_app/views/d01_page_ui.dart';
 import 'package:flutter_speed_ui_app/views/d03_page_ui.dart';
 import 'package:flutter_speed_ui_app/views/d04_page_ui.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -30,7 +31,10 @@ class _D02PageUiState extends State<D02PageUi> {
             child: IconButton(
               icon: const Icon(Icons.arrow_back_ios_new, size: 18, color: Colors.black),
               // ✅ แก้จุดที่ 1: ใช้ pop แทน push เพื่อย้อนกลับไปหน้าก่อนหน้า (D01)
-              onPressed: () => Navigator.pop(context),
+              onPressed: () => Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const D01PageUi()),
+              ),
             ),
           ),
         ),
